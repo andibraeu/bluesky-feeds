@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.expand_path('..', __dir__))
+
+require 'bundler/setup'
+
+require 'app/config'
+require 'app/server'
+
+Server.configure
+
+BlueFactory::Server.set :port, 3000
+BlueFactory::Server.run!
