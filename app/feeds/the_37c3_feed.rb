@@ -21,7 +21,7 @@ class The37c3Feed < Feed
   end
 
   def description
-    "First feed for 37c3 posts, for improvements: contributions are welcome at https://github.com/andibraeu/bluesky-freifunk-feed"
+    "First feed for 37c3 posts, for improvements: contributions are welcome at https://github.com/andibraeu/bluesky-feeds"
   end
 
   def avatar_file

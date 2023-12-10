@@ -5,7 +5,7 @@ set :bundle_flags, '--quiet'
 set :bundle_without, []
 
 set :application, "bsky_feeds"
-set :repository, "git@github.com:mackuba/bluesky-feeds-rb.git"
+set :repository, "git@github.com:andibraeu/bluesky-feeds.git"
 set :scm, :git
 set :keep_releases, 5
 set :use_sudo, false
@@ -14,7 +14,7 @@ set :deploy_via, :remote_cache
 set :migrate_env, "RACK_ENV=production"
 set :public_children, []
 
-server "feeds.example.com", :app, :web, :db, :primary => true
+server "feeds.andi.ishalt.so", :app, :web, :db, :primary => true
 
 before 'bundle:install', 'deploy:set_bundler_options'
 after 'deploy:update_code', 'deploy:link_shared'
