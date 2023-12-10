@@ -6,7 +6,7 @@ require 'sinatra/activerecord'
 ActiveRecord::Base.connection.execute "PRAGMA journal_mode = WAL"
 
 BlueFactory.set :publisher_did, 'did:plc:andi.ishalt.so'
-BlueFactory.set :hostname, 'freifunk-feed.ishalt.so'
+BlueFactory.set :hostname, 'feeds.andi.ishalt.so'
 
 # uncomment to enable authentication (note: does not verify signatures)
 # see Feed#get_posts(params, visitor_did) in app/feeds/feed.rb
