@@ -13,5 +13,5 @@ BlueFactory.set :hostname, 'freifunk-feed.ishalt.so'
 # BlueFactory.set :enable_unsafe_auth, true
 
 BlueFactory.add_feed 'freifunk', FreifunkFeed.new
-BlueFactory.add_feed '37c3', 37c3Feed.new
+BlueFactory.add_feed '37c3', The37c3Feed.new
 
