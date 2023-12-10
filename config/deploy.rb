@@ -5,7 +5,7 @@ set :bundle_flags, '--quiet'
 set :bundle_without, []
 
 set :application, "bsky_feeds"
-set :repository, "git@github.com:andibraeu/bluesky-feeds.git"
+set :repository, "https://github.com/andibraeu/bluesky-feeds.git"
 set :scm, :git
 set :keep_releases, 5
 set :use_sudo, false
