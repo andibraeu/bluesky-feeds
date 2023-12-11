@@ -2,7 +2,7 @@ require_relative 'feed'
 
 class FreifunkFeed < Feed
   REGEXPS = [
-    /freifunk/i, /gluon/i, /\bopenwrt\b/i, /^(?=.*\bbatman\b)(?=.*\brouting\b).*$/i, /^(?=.*\bbabel\b)(?=.*\brouting\b).*$/i, /olsr/i
+    /freifunk/i, /^(?=.*\bgluon\b)(?=.*\brouting\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bfreifunk\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bopenwrt\b).*$/i, /\bopenwrt\b/i, /^(?=.*\bbatman\b)(?=.*\brouting\b).*$/i, /^(?=.*\bbabel\b)(?=.*\brouting\b).*$/i, /olsr/i
   ]
 
   EXCLUDE = [
@@ -17,11 +17,11 @@ class FreifunkFeed < Feed
   end
 
   def display_name
-    "freifunk feed"
+    "Freifunk"
   end
 
   def description
-    "All posts on Bluesky about free wireless community networks, firmware and routing protocols, for improvements: contributions are welcome at https://github.com/andibraeu/bluesky-feeds"
+    "All posts on Bluesky about freifunk, free wireless community networks, firmware and routing protocols, for improvements: contributions are welcome at https://github.com/andibraeu/bluesky-feeds"
   end
 
   def avatar_file
