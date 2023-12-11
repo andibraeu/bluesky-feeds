@@ -21,7 +21,7 @@ class FreifunkFeed < Feed
   end
 
   def description
-    "All posts on Bluesky about free wireless community networks, firmware and routing protocols"
+    "All posts on Bluesky about free wireless community networks, firmware and routing protocols, for improvements: contributions are welcome at https://github.com/andibraeu/bluesky-feeds"
   end
 
   def avatar_file

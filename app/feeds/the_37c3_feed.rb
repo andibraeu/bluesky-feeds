@@ -13,7 +13,7 @@ class The37c3Feed < Feed
   ]
 
   def feed_id
-    1
+    2
   end
 
   def display_name

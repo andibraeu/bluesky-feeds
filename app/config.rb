@@ -5,7 +5,7 @@ require 'sinatra/activerecord'
 
 ActiveRecord::Base.connection.execute "PRAGMA journal_mode = WAL"
 
-BlueFactory.set :publisher_did, 'did:plc:andi.ishalt.so'
+BlueFactory.set :publisher_did, 'did:plc:puavsdqzowvrvlhjxwondteg'
 BlueFactory.set :hostname, 'feeds.andi.ishalt.so'
 
 # uncomment to enable authentication (note: does not verify signatures)
