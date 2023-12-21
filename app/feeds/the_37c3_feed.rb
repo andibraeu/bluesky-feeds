@@ -2,7 +2,7 @@ require_relative 'feed'
 
 class The37c3Feed < Feed
   REGEXPS = [
-    /37c3/i, /37th chaos communication congress/i, /ccc congress/i, /^(?=.*\37\.\b)(?=.*chaos communication congress).*$/i, /^(?=.*\b37c3\b)(?=.*\bcch\b).*$/i, /chaos congress/i
+    /37c3/i, /37th chaos communication congress/i, /chaos computer congress/i, /ccc congress/i, /^(?=.*\37\.\b)(?=.*chaos communication congress).*$/i, /^(?=.*\b37c3\b)(?=.*\bcch\b).*$/i, /chaos congress/i
   ]
 
   EXCLUDE = [
