@@ -2,7 +2,7 @@ require_relative 'feed'
 
 class FreifunkFeed < Feed
   REGEXPS = [
-    /freifunk/i, /^(?=.*\bgluon\b)(?=.*\brouting\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bfreifunk\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bopenwrt\b).*$/i, /\bopenwrt\b/i, /^(?=.*\bbatman\b)(?=.*\brouting\b).*$/i, /^(?=.*\bbabel\b)(?=.*\brouting\b).*$/i, /olsr/i
+    /freifunk/i, /^(?=.*\bgluon\b)(?=.*\brouting\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bfreifunk\b).*$/i, /^(?=.*\bgluon\b)(?=.*\bopenwrt\b).*$/i, /\bopenwrt\b/i, /^(?=.*\bbatman\b)(?=.*\brouting\b).*$/i, /^(?=.*\bbabel\b)(?=.*\brouting\b).*$/i, /\bolsr\b/i
   ]
 
   EXCLUDE = [
